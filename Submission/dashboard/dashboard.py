@@ -3,8 +3,8 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Load dataset
-day_df = pd.read_csv("dashboard/all_df.csv")
+file_path = os.path.join(os.path.dirname(_file_), "all_df.csv")
+data = pd.read_csv(file_path)
 
 # Title
 st.title("Dashboard Analisis Peminjaman Sepeda")
